@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>The Sleep Co</title>
+
+    <!--- google fonts (catamaran 200, 400, 500, 800)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
     <!------ gridlex  -------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!------ font awesome icons  -------->
@@ -12,34 +16,37 @@
 
 <body>
     <!---------------------------- header banner ------------------------>
-    <header class="grid padded">
-        <div class="col-12-middle"></div>
-            <h3> Sleep like a baby</h3>
-            <h1>The ultimate mattress solution</h1> 
+    <header class="grid padded text-center tall-100">
+        <div class="col-12-middle">
+            <h3 class="font-weight-bold"> <span class="featured-text">Sleep </span> like a baby</h3>
+            <h1 class="font-weight-light">The ultimate mattress solution</h1> 
         </div>  
     </header>
     <!--------------------  gallery section -------------------------->
     <section  class="grid">
-        <div class="col-6 padded">
-            <h2>built to last a lifetime</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam dolorum eaque quasi eligendi iusto omnis! Maxime excepturi aperiam qui animi consectetur itaque repudiandae unde? Modi, labore. Amet, inventore eligendi.</p>
+        <div class="col-6-middle padded">
+            <h2>built to last a <span class="featured-text">lifetime</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam dolorum eaque quasi eligendi iusto omnis! Maxime excepturi aperiam qui animi consectetur itaque repudiandae unde? Modi, labore. Amet, inventore eligendi. </p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. At dolore dignissimos adipisci minus error dolores, quod dolor in voluptatum repudiandae, suscipit reprehenderit eum deleniti officiis, quae facilis? Assumenda, molestias porro.</p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. At dolore dignissimos adipisci minus error dolores, quod dolor in voluptatum repudiandae, suscipit reprehenderit eum deleniti officiis, quae facilis? Assumenda, molestias porro.</p>
         </div>
-        <div class="col-6 bg-image-lamp">
+        <div class="col-6 bg-image-lamp tall-70">
             <!-- background image bed -->
         </div>
-        <div class="col-6 bg-image-pug">
+        <div class="col-6 bg-image-pug tall-70">
             <!-- background image sleeping pug -->
         </div>
-        <div class="col-6 padded">
-            <h2>so soft you'll melt</h2>
+        <div class="col-6-middle padded">
+            <h2>so <span class="featured-text">soft </span>you'll melt</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam dolorum eaque quasi eligendi iusto omnis! Maxime excepturi aperiam qui animi consectetur itaque repudiandae unde? Modi, labore. Amet, inventore eligendi.</p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. At dolore dignissimos adipisci minus error dolores, quod dolor in voluptatum repudiandae, suscipit reprehenderit eum deleniti officiis, quae facilis? Assumenda, molestias porro.</p>
         </div>
     </section>
 
     <!---------------------------- feature icon grid ----------------------------->
     <section class="grid padded bg-dark">
-        <div class="col-12 padded-sm"> 
-            <h2> featuers you will love</h2>
+        <div class="col-12 padded-sm text-center"> 
+            <h2> <span class="featured-text">features</span> you will love</h2>
         </div>
         <div class="col-3 padded-sm">
             <i class="fas fa-cloud"></i>
@@ -60,36 +67,44 @@
     </section>
     <!---------------------------- image banner ----------------------------->
 
-    <section class="padded">
-        <h3>never underestimate the power of a good nights sleep.</h3>
+    <section class="grid padded text-center bg-image-pillow tall-50">
+        <div class="col-12-middle">
+            <h3 class="big-text"> <span class="font-weight-normal small-text">never underestimate the power of </span>
+                <br>
+               a good nights <span class="white-text">sleep </span>
+            </h3>
+        </div>  
     </section>
 
         <!---------------------------- testimonial section ----------------------------->
 
-    <section class="grid padded">
-        <div class="col-1">
-            <span>"</span>
+    <section class="grid padded-lg">
+        <div class="col-1 text-right">
+            <span class="quote-icon">&ldquo;</span>
         </div>
-        <div class=col-10>
+        <div class="col-10 text-center medium-text font-weight-light">
             <p>I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family.</p>
-            <p> - A very happy customer </p>
+            <p class="subtitle"> - A very happy customer</p>
         </div>
         <div class="col-1">
-            <span>"</span>
+            <span class="quote-icon">&rdquo;</span>
         </div>
     </section>
 
     <!----------------------- footer ---------------------->
     <footer class="grid-spaceBetween padded bg-dark">
-        <div class="col-4">
-            <h2>Let's connect</h2>
+        <div class="col-4-bottom">
+            <h2>Let's
+                <br>
+                <span class="featured-text">connect</span>
+            </h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi impedit aperiam temporibus atque, iure eveniet quasi delectus eum provident maiores tempora quod voluptas obcaecati sequi reprehenderit itaque dolorum doloribus quaerat.</p>
         </div>
-        <div class="col-6">
-            <p> call: 555.5555</p>
-            <p>Email: hello@thesleep.co</p>
-            <p>Store: 55 Main St. Chicago</p>
-            <p> Instagram: @thesleepco</p>
+        <div class="col-5-bottom">
+            <p><strong> call:</strong> <a href="tel:#">555.5555</a></p>
+            <p><strong> Email:</strong> <a href="mailto:#">hello@thesleep.co</a></p>
+            <p><strong> Store:</strong> <a href="#">55 Main St. Chicago</a></p>
+            <p><strong> Instagram:</strong><a href="https://www.instagram.com"> @thesleepco</a></p>
         </div>
     </footer>
 
