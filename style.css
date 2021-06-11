@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+/* temp styles for structural html*/
+
+* {
+    padding: .5rem;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+body {border: none;}
+html {border: none;}
+
+/* image styles */
+
+.bg-image-pug {
+    background-image: url('/images/the-sleep-co-pug.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    min-height: 60vh;
+}
+
+.bg-image-lamp {
+    background-image: url('/images/the-sleep-co-bed-lamp.jpg');
+    background-size: cover;
+    min-height: 60vh;
+}
+
+/* universal styles and utility classes */
+
+.padded    {padding: 5%}
+.padded-sm {padding: 1rem}
+
+.bg-dark {
+    background-color: #192b37;
+    color: #fff;
 }
