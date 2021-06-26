@@ -26,6 +26,14 @@ body {
     color: #fff;
 }
 
+.bg-feature {
+    background-color: #F8BB2B;
+}
+
+.bg-light {
+    background-color: #a3daffb4;
+}
+
 .tall-50  {min-height: 50vh;}
 .tall-60  {min-height: 60vh;}
 .tall-70  {min-height: 70vh;}
@@ -33,6 +41,10 @@ body {
 .tall-90  {min-height: 90vh;}
 .tall-100 {min-height: 100vh;}
 
+.right    {text-align: right;}
+.left     {text-align: left;}
+.center   {text-align: center;}
+ 
 /************* image styles ****************/
 
 .bg-image-pug {
@@ -52,7 +64,6 @@ body {
     background-position: 50% 55%;
 }
 
-
 /**** typography styles ****/
 
 .text-left   { text-align: left;}
@@ -61,6 +72,7 @@ body {
 
 .featured-text { color: #F8BB2B;}
 .white-text { color: #fff;}
+.dark-text  {color: #192b37}
 
 .small-text { font-size: 1.5rem;}
 .medium-text {
