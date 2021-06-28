@@ -1,8 +1,3 @@
-/** colors 
-    yellow #F8BB2B
- **/
-
-
 * {
     padding: 0;
     margin: 0;
@@ -10,13 +5,9 @@
 }
 
 
-/* universal styles and utility classes */
+/********************** universal styles and utility classes ****************************/
 
-body {
-    font-family: 'Catamaran', sans-serif;
-    color: #192b37;
-}
-
+/* padding and margin utility classes **********/
 .padded    {padding: 5%}
 .padded-sm {padding: 1rem}
 .padded-lg  {padding: 10%;}
@@ -24,20 +15,7 @@ body {
 .margin-bottom { margin-bottom: 1rem;}
 
 
-
-.bg-dark {
-    background-color: #192b37;
-    color: #fff;
-}
-
-.bg-feature {
-    background-color: #F8BB2B;
-}
-
-.bg-light {
-    background-color: #e3ecf2;
-}
-
+/* minimum height  *****************************/
 .tall-30  {min-height: 30vh;}
 .tall-40  {min-height: 40vh;}
 .tall-50  {min-height: 50vh;}
@@ -48,94 +26,57 @@ body {
 .tall-100 {min-height: 100vh;}
 
 
-.button {
+/*  background and image styles ****************/
+
+/* bg colors ********/
+.bg-dark {
     background-color: #192b37;
-    border: 1px solid #192b37;
-    border-radius: 3px;
-    padding: .3rem 0;
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
 }
+.bg-feature {background-color: #F8BB2B;}
+.bg-light {background-color: #e3ecf2;}
 
- 
-/************* image and video styles ****************/
 
+/* bg images and image styles ********/
+
+.bg-image {
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .bg-image-pug {
     background-image: url('/images/the-sleep-co-pug.jpg');
-    background-size: cover;
     background-position: 50% 30%;
 }
 
 .bg-image-lamp {
     background-image: url('/images/the-sleep-co-bed-lamp.jpg');
-    background-size: cover;
 }
 
 .bg-image-pillow {
     background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');
-    background-size:cover;
     background-position: 50% 55%;
 }
 
-/* iframe {
-    width: 560px; 
-    height: 315px;
-} */
+.landscape {padding-bottom: 65%;}
+.portrait  {padding-bottom: 125%;}
+.square    {padding-bottom: 100%;}
 
 
-/************ typography styles ************/
+/* typography styles *************************/
 
-.text-left   {text-align: left;}
-.text-center {text-align: Center;}
-.text-right  {text-align: right;}
-
-.featured-text {color: #F8BB2B;}
-.white-text {color: #fff;}
-.dark-text  {color: #192b37}
-
-.small-text { font-size: 1.5rem;}
-.medium-text {
-    font-size: 2rem;
-    line-height: 1.2;
-
+body {
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37;
 }
-
-.big-text { font-size: 4rem;}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: rgb(120, 120, 125);
-}
-
-.quote-icon {
-    font-size: 6rem;
-    line-height: 1;
-    display: inline-block;
-    color: rgb(120, 120, 125);
-
-}
-.font-weight-light {font-weight: 200;}
-.font-weight-normal {font-weight: normal;}
-.font-weight-bold {font-weight: 800;}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
 h2, h3, h4, h5, h6 p {
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
-h2 {
-    font-size: 2.5rem;
-    line-height: 1.3;
-}
-
-h3 {
-    font-size: 1.5rem;
-    line-height: 1;
-}
+h2 {font-size: 2.5rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.5rem;}
 
 p { 
     font-weight: 200;
@@ -154,67 +95,44 @@ a {
 
 a:hover { color: #F8BB2B; }
 
+.left   {text-align: left;}
+.center {text-align: Center;}
+.right  {text-align: right;}
 
+.featured-text {color: #F8BB2B;}
+.white-text {color: #fff;}
+.dark-text  {color: #192b37}
 
-/**************** contact form  ******************/
+.small-text  { font-size: 1.5rem;}
+.medium-text { font-size: 2rem;} 
+.big-text    { font-size: 4rem;}
 
-form input,
-form textarea {
-	font-family: inherit;
-    font-size: 1rem;
-    letter-spacing: .07em;
-    color:rgb(120, 120, 125);
-    width: 100%;
-	margin: 0.25rem 0;
-	padding: .5rem .75rem;
-	border: 1px solid #fff;
-    border-radius: 5px;
-	outline: none;	
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(120, 120, 125);
 }
 
-textarea {
-	min-height: 10rem;
+.font-weight-light {font-weight: 200;}
+.font-weight-normal {font-weight: normal;}
+.font-weight-bold {font-weight: 800;}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
-form button {
-	background-color:#F8BB2B;
-	color: #fff;
-	border: 2px solid #F8BB2B;
+.cta {
+    display: inline-block;
+    background-color: #192b37;
+    border: 1px solid #192b37;
     border-radius: 3px;
-    width: 100%;
-	padding: .75rem 2rem;
-	margin: .5rem 0;
-	letter-spacing: .05em;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-
-/**************** header & footer styles ******************/
-
-header {
-    background-image: url('/images/the-sleep-co-bed.jpg');
-    background-position: 50% 35%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-header h3 {
-    font-size: 5rem;
-    line-height: .85;
-}
-
-a {
-    border: none;
-}
-
-.copyright {
-    background-color:black;
+    padding: .3rem 0;
     color: #fff;
-    padding: .5rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 70%;
 }
 
-/** icon grid **/
+/*** font-awesome and icon grid **************************/
 .fas {
     display: block;
     text-align: center;
@@ -229,8 +147,93 @@ a {
         margin: 1.5rem .5rem;
 }
 
+/********************* contact form  *******************************/
 
-/** cards **/
+input,
+textarea {
+	font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: .07em;
+    color:rgb(120, 120, 125);
+    width: 100%;
+    display: block;
+	margin-bottom: 0.5rem;
+	padding: .5rem .75rem;
+	border: 2px solid #fff;
+    border-radius: 3px;
+	outline: none;	
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #F8BB2B;
+    outline: none;
+}
+
+.button {
+	background-color:#F8BB2B;
+	color: inherit;
+	border: 2px solid #F8BB2B;
+    border-radius: 3px;
+    width: 100%;
+	padding: .75rem 2rem;
+	margin: .5rem 0;
+	letter-spacing: .05em;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/*** header & footer styles ***************************/
+
+header {
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-position: 50% 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2% 5%;
+}
+
+header h3 {
+    font-size: 5rem;
+    line-height: .85;
+}
+
+nav a {
+    padding: .5rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
+}
+
+footer a {
+    padding: .5rem;
+    display: inline-block;
+    border: none;
+}
+
+.copyright {
+    background-color:black;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+
+
+/* testimonial block ********************/
+
+.quote-icon {
+    font-size: 6rem;
+    line-height: 1;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+}
+
+/** cards ********************************/
 
 .card {
     border: 5px solid #F8BB2B;
