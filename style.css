@@ -13,6 +13,7 @@
 .padded-lg  {padding: 10%;}
 
 .margin-bottom { margin-bottom: 1rem;}
+.margin-top    { margin-top: 1rem;}
 
 
 /* minimum height  *****************************/
@@ -237,6 +238,7 @@ footer a {
 .card {
     border: 5px solid #F8BB2B;
     padding: 0;
+    margin: .5rem;
 }
 
 
@@ -308,6 +310,8 @@ footer a {
     .social-links {
       font-size: 2rem;
     }  
+
+    .bg-image-lamp {background-position: 50% 50%;}
 }
 
 
@@ -336,6 +340,10 @@ footer a {
         margin: 0;
       }  
 
+    p.medium-text  { 
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
     
 }
 
