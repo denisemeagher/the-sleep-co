@@ -223,7 +223,6 @@ footer a {
 }
 
 
-
 /* testimonial block ********************/
 
 .quote-icon {
@@ -233,10 +232,128 @@ footer a {
     color: rgb(120, 120, 125);
 }
 
-/** cards ********************************/
+/** cards block ********************************/
 
 .card {
     border: 5px solid #F8BB2B;
     padding: 0;
 }
 
+
+/******************* General CSS Responsive Styles (Apply everywhere unless overridden) ***************/ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+
+    body {border: 2px solid green; padding: 0.5rem;}
+
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+
+  .md-tall-80 { min-height: 80vh;}
+}
+
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+    html { font-size: 14px;}
+    p    { font-size: 1.1rem;}
+
+    body {border: 2px solid blue; padding: 0.5rem;}
+
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+        
+    .sm-text-center { text-align: center; }
+    .sm-text-left   { text-align: left; }
+    .sm-text-right  { text-align: right; }
+
+    .sm-padded     { padding: 5%; }
+    .sm-padded-1   { padding: 1rem; }
+    .sm-padded-05  { padding: 0.5rem; }
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+
+
+    .logo h2 { font-size: 2rem;}
+
+    header h3 {font-size: 10vw;}
+
+    p.medium-text  { 
+        font-size: 2rem;
+        line-height: 1.2;
+        }
+
+    .social-links {
+      font-size: 2rem;
+    }  
+}
+
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+
+
+    body {border: 2px solid lightblue; padding: 0.5rem;}
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    header h1 { 
+      font-size: 1.4rem;
+      line-height: 1.1;
+    }
+
+    .big-text   { font-size: 2.8rem;}
+    .small-text { font-size: 1.3rem;}
+
+    .social-links {
+        font-size: 1.5rem;
+        margin: 0;
+      }  
+
+    
+}
+
+
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+
+    html { font-size: 12px;}
+
+    body {border: 2px solid lightblue; padding: 0.5rem;}
+
+    [class*="grid"] .xxs-stack { 
+      display: block; 
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+}
