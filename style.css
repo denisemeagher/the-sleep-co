@@ -255,7 +255,7 @@ footer a {
 
 @media (max-width: 64em) {
 
-    body {border: 2px solid green; padding: 0.5rem;}
+    /* body {border: 2px solid green; padding: 0.5rem;} */
 
   .show-md { display: block; }
   .hide-md { display: none;  }
@@ -273,7 +273,7 @@ footer a {
     html { font-size: 14px;}
     p    { font-size: 1.1rem;}
 
-    body {border: 2px solid blue; padding: 0.5rem;}
+    /* body {border: 2px solid blue; padding: 0.5rem;} */
 
 
     .show-sm { display: block; }
@@ -322,7 +322,7 @@ footer a {
 @media (max-width: 36em) {
 
 
-    body {border: 2px solid lightblue; padding: 0.5rem;}
+    /* body {border: 2px solid lightblue; padding: 0.5rem;} */
 
     .show-xs { display: block; }
     .hide-xs { display: none;  }
