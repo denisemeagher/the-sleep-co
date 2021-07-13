@@ -1,46 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-         
-        <!-- viewport meta for responsive  -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+---
+layout: default
+cards:
+ - heading: Standard Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+   featured_image: /images/the-sleep-co-pug.jpg
+ - heading: Deluxe Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+   featured_image: /images/the-sleep-co-yellow-bg-pillow.jpg
+ - heading: Luxury Mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+   featured_image: /images/the-sleep-co-bed-lamp.jpg
+---
 
-        <title>Contact The Sleep Co</title>
-
-        <!--- google fonts (catamaran 200, 400, 500, 800)-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
-        <!------ gridlex  -------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-        <!------ font awesome icons  -------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!------ custom css  -------->
-        <link rel="stylesheet" href="style.css">      
-    </head>
-
-    <body>
 <!---------------------------- header banner ------------------------>
         <header class="grid tall-60">
-            <!--- header nav --->
-            <div class="header-nav grid col-12-top">
-                <div class="col-5_sm-12-middle sm-text-center sm-padded-b-0">
-                    <a href="index.html" class="logo"> 
-                        <h2>The Sleep Co</h2>
-                    </a>
-                </div>
-                <nav class="col-7_sm-12-middle right sm-text-center">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>
+
+            {% include header-nav.html %}
+
             <div class="col-12 center">
                 <h3 class="font-weight-bold editable"> <span class="featured-text">addictively </span>soft</h3>
                 <h1 class="font-weight-light editable">You wont want to get out of bed</h1> 
             </div>  
         </header>
-
 
 <!---------------------------- product page icon grid ----------------------------->
         <section class="grid padded bg-feature tall-60">
@@ -67,33 +48,18 @@
 
 <!---------------------------- card section ----------------------------->
         <section class="grid-spaceAround tall-90 padded">
+            {% for item in page.cards %}
             <div class="col-3_sm-12 card">
-                <div class="bg-image bg-image-pug tall-40 margin-bottom">
+                <div class="bg-image tall-40 margin-bottom" style="background-image: url('{{item.featured_image}}');
+                background-position: 50% 30%;">
                     <!-- standard mattress pic -->
                 </div>
                 <div class="padded">
-                    <h3 class="editable"> standard mattress</h3> 
-                    <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, optio ipsum, illo rerum perferendis commodi similique porro ipsam. </p>
+                    <h3 class="editable"> {{item.heading}}</h3> 
+                    <p class="editable"> {{item.description}} </p>
                 </div> 
             </div>
-            <div class="col-3_sm-12 card">
-                <div class="bg-image bg-image-pug tall-40 margin-bottom">
-                    <!-- deluxe mattress pic -->
-                </div>
-                <div class="padded">
-                    <h3 class="editable"> deluxe mattress</h3> 
-                    <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, optio ipsum, illo rerum perferendis commodi similique porro ipsam. </p>
-                </div> 
-            </div>
-            <div class="col-3_sm-12 card">
-                <div class="bg-image bg-image-pug tall-40 margin-bottom">
-                    <!-- luxury mattress pic -->
-                </div>
-                <div class="padded">
-                    <h3 class="editable"> luxury mattress</h3> 
-                    <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, optio ipsum, illo rerum perferendis commodi similique porro ipsam. </p>
-                </div> 
-            </div>
+            {% endfor %}
         </section>
 
 <!------------------------------ banner  ------------------------------------->
@@ -133,23 +99,3 @@
                 <!-- background image bed -->
             </div>
         </section>
-
-<!------------------------------- footer ------------------------------------->
-        <footer class="grid-middle-spaceAround padded-lg bg-dark">
-            <div class="col-6_sm-12 center">
-                <h2 class="uppercase font-weight-bold medium-text">The Sleep Co </h2>
-                <p class="editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi impedit aperiam temporibus atque, iure eveniet quasi delectus eum provident maiores tempora quod voluptas obcaecati.</p>
-            </div>
-            <div class="grid-middle-spaceAround col-12 center">
-                <nav class="col-6_sm-12 center">
-                    <a href="#"><i class="fab fa-facebook-f social-links"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p social-links"></i></a>
-                    <a href="#"><i class="fab fa-instagram social-links"></i></a>
-                </nav>
-            </div>
-        </footer>
-        <div class="grid">
-            <p class="col-12-middle center copyright">Copyright 2021</p> 
-        </div>
-    </body>
-</html>  

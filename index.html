@@ -1,6 +1,16 @@
 ---
 layout: default
+featured: 
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+ - icon: fas fa-apple-alt
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+ - icon: fas fa-atom
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
+ - icon: fas fa-chart-pie
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.
 ---
+
 <!---------------------------- header banner ------------------------>
         <header class="grid tall-100 md-tall-80">
 
@@ -39,22 +49,14 @@ layout: default
             <div class="col-12 padded-sm center"> 
                 <h2> <span class="featured-text">features</span> you will love</h2>
             </div>
+
+            {% for item in page.featured %}
             <div class="col-3_sm-6 xxs-stack padded-sm">
-                <i class="fas fa-cloud"></i>
-                <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.</p>
+                <i class="{{item.icon}}"></i>
+                <p class="editable"> {{item.description}}</p>
             </div>
-            <div class="col-3_sm-6 xxs-stack padded-sm"> 
-                <i class="fas fa-cloud"></i>
-                <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.</p>
-            </div>
-            <div class="col-3_sm-6 xxs-stack padded-sm"> 
-                <i class="fas fa-cloud"></i>
-                <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.</p>
-            </div>
-            <div class="col-3_sm-6 xxs-stack padded-sm"> 
-                <i class="fas fa-cloud"></i>
-                <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore recusandae facere, tenetur quam incidunt molestiae, optio ipsum, illo rerum perferendis commodi similique porro ipsam. Tempore facilis asperiores molestiae? Exercitationem.</p>
-            </div>
+            {% endfor %}
+           
         </section>
 <!---------------------------- image banner ----------------------------->
 
