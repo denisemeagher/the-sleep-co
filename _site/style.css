@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/********************** universal styles and utility classes ****************************/
+
+/* padding and margin utility classes **********/
+.padded    {padding: 5%}
+.padded-sm {padding: 1rem}
+.padded-lg  {padding: 10%;}
+
+.margin-bottom { margin-bottom: 1rem;}
+.margin-top    { margin-top: 1rem;}
+
+
+/* minimum height  *****************************/
+.tall-30  {min-height: 30vh;}
+.tall-40  {min-height: 40vh;}
+.tall-50  {min-height: 50vh;}
+.tall-60  {min-height: 60vh;}
+.tall-70  {min-height: 70vh;}
+.tall-80  {min-height: 80vh;}
+.tall-90  {min-height: 90vh;}
+.tall-100 {min-height: 100vh;}
+
+
+/*  background and image styles ****************/
+
+/* bg colors ********/
+.bg-dark {
+    background-color: #192b37;
+    color: #fff;
+}
+.bg-feature {background-color: #F8BB2B;}
+.bg-light {background-color: #e3ecf2;}
+
+
+/* bg images and image styles ********/
+
+.bg-image {
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-image-pug {
+    background-image: url('/images/the-sleep-co-pug.jpg');
+    background-position: 50% 30%;
+}
+
+.bg-image-lamp {
+    background-image: url('/images/the-sleep-co-bed-lamp.jpg');
+}
+
+.bg-image-pillow {
+    background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');
+    background-position: 50% 55%;
+}
+
+.landscape {padding-bottom: 65%;}
+.portrait  {padding-bottom: 125%;}
+.square    {padding-bottom: 100%;}
+
+
+/* typography styles *************************/
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37;
+}
+h2, h3, h4, h5, h6 p {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h2 {font-size: 2.5rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.5rem;}
+
+p { 
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a:hover { color: #F8BB2B; }
+
+.left   {text-align: left;}
+.center {text-align: Center;}
+.right  {text-align: right;}
+
+.featured-text {color: #F8BB2B;}
+.white-text {color: #fff;}
+.dark-text  {color: #192b37}
+
+.small-text  { font-size: 1.5rem;}
+.medium-text { font-size: 2rem;} 
+.big-text    { font-size: 4rem;}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(120, 120, 125);
+}
+
+.font-weight-light {font-weight: 200;}
+.font-weight-normal {font-weight: normal;}
+.font-weight-bold {font-weight: 800;}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #192b37;
+    border: 1px solid #192b37;
+    border-radius: 3px;
+    padding: .3rem 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 70%;
+}
+
+/*** font-awesome and icon grid **************************/
+.fas {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.social-links {
+        border: 2px solid #fff;
+        font-size: 2.5rem;
+        padding: .5rem .75rem;
+        margin: 1.5rem .5rem;
+}
+
+/********************* contact form  *******************************/
+
+input,
+textarea {
+	font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: .07em;
+    color:rgb(120, 120, 125);
+    width: 100%;
+    display: block;
+	margin-bottom: 0.5rem;
+	padding: .5rem .75rem;
+	border: 2px solid #fff;
+    border-radius: 3px;
+	outline: none;	
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #F8BB2B;
+    outline: none;
+}
+
+.button {
+	background-color:#F8BB2B;
+	color: inherit;
+	border: 2px solid #F8BB2B;
+    border-radius: 3px;
+    width: 100%;
+	padding: .75rem 2rem;
+	margin: .5rem 0;
+	letter-spacing: .05em;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/*** header & footer styles ***************************/
+
+header {
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-position: 50% 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2% 5%;
+}
+
+header h3 {
+    font-size: 5rem;
+    line-height: .85;
+}
+
+nav a {
+    padding: .5rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
+}
+
+footer a {
+    padding: .5rem;
+    display: inline-block;
+    border: none;
+}
+
+.copyright {
+    background-color:black;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+
+/* testimonial block ********************/
+
+.quote-icon {
+    font-size: 6rem;
+    line-height: 1;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+}
+
+/** cards block ********************************/
+
+.card {
+    border: 5px solid #F8BB2B;
+    padding: 0;
+    margin: .5rem;
+}
+
+
+/******************* General CSS Responsive Styles (Apply everywhere unless overridden) ***************/ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+
+    /* body {border: 2px solid green; padding: 0.5rem;} */
+
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+
+  .md-tall-80 { min-height: 80vh;}
+}
+
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+    html { font-size: 14px;}
+    p    { font-size: 1.1rem;}
+
+    /* body {border: 2px solid blue; padding: 0.5rem;} */
+
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+        
+    .sm-text-center { text-align: center; }
+    .sm-text-left   { text-align: left; }
+    .sm-text-right  { text-align: right; }
+
+    .sm-padded     { padding: 5%; }
+    .sm-padded-1   { padding: 1rem; }
+    .sm-padded-05  { padding: 0.5rem; }
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+
+
+    .logo h2 { font-size: 2rem;}
+
+    header h3 {font-size: 10vw;}
+
+    p.medium-text  { 
+        font-size: 2rem;
+        line-height: 1.2;
+        }
+
+    .social-links {
+      font-size: 2rem;
+    }  
+
+    .bg-image-lamp {background-position: 50% 50%;}
+}
+
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+
+
+    /* body {border: 2px solid lightblue; padding: 0.5rem;} */
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    header h1 { 
+      font-size: 1.4rem;
+      line-height: 1.1;
+    }
+
+    .big-text   { font-size: 2.8rem;}
+    .small-text { font-size: 1.3rem;}
+
+    .social-links {
+        font-size: 1.5rem;
+        margin: 0;
+      }  
+
+    p.medium-text  { 
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    
+}
+
+
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+
+    html { font-size: 12px;}
+
+    body {border: 2px solid lightblue; padding: 0.5rem;}
+
+    [class*="grid"] .xxs-stack { 
+      display: block; 
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+}
