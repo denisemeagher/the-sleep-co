@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
         <!------ font awesome icons  -------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- animate on scroll  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!------ custom css  -------->
         <link rel="stylesheet" href="style.css">      
     </head>
@@ -24,18 +26,30 @@
         <header class="grid tall-60">
 
             <div class="header-nav grid col-12-top">
-    <div class="col-5_sm-12-middle sm-text-center sm-padded-b-0">
+    <div class="col-5_sm-11-middle sm-text-center sm-padded-b-0">
         <a href="index.html" class="logo"> 
             <h2>The Sleep Co</h2>
         </a>
     </div>
-    <nav class="col-7_sm-12-middle right sm-text-center">
+    <nav class="col-7_sm-12-middle right sm-text-center hide-sm">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </div>    
+    </div>
 </div>
+
+<nav class="mobile-menu bg-feature padded">
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
             <div class="col-12 center">
                 <h3 class="font-weight-bold editable"> <span class="featured-text">addictively </span>soft</h3>
@@ -162,5 +176,13 @@
         <div class="grid">
             <p class="col-12-middle center copyright">Copyright 2021</p> 
         </div>
+        <!-- add jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+        <!-- animate on scroll  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <!-- our custom Javascript file-->
+         <script src="/scripts.js"></script>
     </body>
 </html>
