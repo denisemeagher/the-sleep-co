@@ -3,13 +3,13 @@ layout: default
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: portrait
-    background_image: /uploads/the-sleep-co-pug.jpg
+    background_image: /images/the-sleep-co-pug.jpg
   - column-size: col-4_sm-12
     aspect-ratio: portrait
     background_image: /images/the-sleep-co-bed.jpg
   - column-size: col-4_sm-12
     aspect-ratio: portrait
-    background_image: /uploads/the-sleep-co-pug.jpg
+    background_image: /images/the-sleep-co-pug.jpg
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /images/the-sleep-co-bed-lamp.jpg
@@ -42,16 +42,50 @@ gallery:
 
 
 <!---------------------- Photo Gallery Section  ------------------------>
-<section>
+<!-- popup jekyll image gallery -->
+<section class="padded">
+	<h2> Popup Gallery </h2>
+	<div class="gallery grid" id="lightgallery">
+
+		{% for item in page.gallery %}
+		
+		<a class={{item.column-size}} href="{{item.background_image}}">
+			<div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"></div>
+		</a>
+		{% endfor %}
+	</div>	
+
+	<!-- button to pop up a gallery -->
+	<div class="gallery grid" id="lightgallery-2">
+
+		<a class="button" title="the most comfy beds" href="/images/the-sleep-co-bed.jpg">
+			View Our Work
+		</a>
+		<a href="/images/the-sleep-co-pug.jpg" title="sleepy pug"></a>
+		<a href="/images/the-sleep-co-bed.jpg" title="the most comfy beds"></a>
+		<a href="/images/the-sleep-co-bed-lamp.jpg" title="bedside lamps"></a>
+		<a href="/images/the-sleep-co-yellow-bg-pillow.jpg" title="perfect pillows"></a>
+		<a href="/images/the-sleep-co-pug.jpg" title="sleepy pug"></a>
+		<a href="/images/the-sleep-co-bed-lamp.jpg" title="reading lights"></a>
+	</div>	
+
+
+
+</section>
+
+<!-- standard jekyll image gallery -->
+<section class="padded">
+	<h2> Standard Gallery </h2>
 	<div class="gallery grid">
 
 		{% for item in page.gallery %}
+
 		<div class={{item.column-size}}>
 			<div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"></div>
 		</div>
 		{% endfor %}
 	</div>	
-
+</section>
 
 	<!-- <div class="gallery grid">
 		<div class="col-4">

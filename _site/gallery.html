@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- animate on scroll  -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- light gallery for image pop ups  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!------ custom css  -------->
         <link rel="stylesheet" href="style.css" />      
     </head>
@@ -63,44 +65,120 @@
 
 
 <!---------------------- Photo Gallery Section  ------------------------>
-<section>
+<!-- popup jekyll image gallery -->
+<section class="padded">
+	<h2> Popup Gallery </h2>
+	<div class="gallery grid" id="lightgallery">
+
+		
+		
+		<a class=col-4_sm-12 href="/images/the-sleep-co-pug.jpg">
+			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-4_sm-12 href="/images/the-sleep-co-bed.jpg">
+			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-bed.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-4_sm-12 href="/images/the-sleep-co-pug.jpg">
+			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-12 href="/images/the-sleep-co-bed-lamp.jpg">
+			<div class="bg-image landscape" style="background-image: url('/images/the-sleep-co-bed-lamp.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-4 href="/images/the-sleep-co-yellow-bg-pillow.jpg">
+			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-4 href="/images/the-sleep-co-bed-lamp.jpg">
+			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-bed-lamp.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-4 href="/images/the-sleep-co-pug.jpg">
+			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
+		</a>
+		
+		
+		<a class=col-12 href="/images/the-sleep-co-yellow-bg-pillow.jpg">
+			<div class="bg-image landscape" style="background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');"></div>
+		</a>
+		
+	</div>	
+
+	<!-- button to pop up a gallery -->
+	<div class="gallery grid" id="lightgallery-2">
+
+		<a class="button" title="the most comfy beds" href="/images/the-sleep-co-bed.jpg">
+			View Our Work
+		</a>
+		<a href="/images/the-sleep-co-pug.jpg" title="sleepy pug"></a>
+		<a href="/images/the-sleep-co-bed.jpg" title="the most comfy beds"></a>
+		<a href="/images/the-sleep-co-bed-lamp.jpg" title="bedside lamps"></a>
+		<a href="/images/the-sleep-co-yellow-bg-pillow.jpg" title="perfect pillows"></a>
+		<a href="/images/the-sleep-co-pug.jpg" title="sleepy pug"></a>
+		<a href="/images/the-sleep-co-bed-lamp.jpg" title="reading lights"></a>
+	</div>	
+
+
+
+</section>
+
+<!-- standard jekyll image gallery -->
+<section class="padded">
+	<h2> Standard Gallery </h2>
 	<div class="gallery grid">
 
 		
+
 		<div class=col-4_sm-12>
-			<div class="bg-image portrait" style="background-image: url('/uploads/the-sleep-co-pug.jpg');"></div>
+			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
 		</div>
 		
+
 		<div class=col-4_sm-12>
 			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-bed.jpg');"></div>
 		</div>
 		
+
 		<div class=col-4_sm-12>
-			<div class="bg-image portrait" style="background-image: url('/uploads/the-sleep-co-pug.jpg');"></div>
+			<div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
 		</div>
 		
+
 		<div class=col-12>
 			<div class="bg-image landscape" style="background-image: url('/images/the-sleep-co-bed-lamp.jpg');"></div>
 		</div>
 		
+
 		<div class=col-4>
 			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');"></div>
 		</div>
 		
+
 		<div class=col-4>
 			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-bed-lamp.jpg');"></div>
 		</div>
 		
+
 		<div class=col-4>
 			<div class="bg-image square" style="background-image: url('/images/the-sleep-co-pug.jpg');"></div>
 		</div>
 		
+
 		<div class=col-12>
 			<div class="bg-image landscape" style="background-image: url('/images/the-sleep-co-yellow-bg-pillow.jpg');"></div>
 		</div>
 		
 	</div>	
-
+</section>
 
 	<!-- <div class="gallery grid">
 		<div class="col-4">
@@ -150,13 +228,18 @@
         <div class="grid">
             <p class="col-12-middle center copyright">Copyright 2021</p> 
         </div>
+
+
         <!-- add jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
        
-        <!-- animate on scroll  -->
+        <!-- animate on scroll -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- light gallery image popups -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
         
-        <!-- our custom Javascript file-->
+        <!-- our custom Javascript file -->
          <script src="/scripts.js"></script>
     </body>
 </html>

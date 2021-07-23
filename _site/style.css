@@ -82,7 +82,26 @@
 
 /* image gallery */
 
+.gallery [class*="col-"] {
+    padding: .5%;
+}
 
+.gallery a {
+    border-bottom: none;
+}
+
+/* background of gallery when active */
+.lg-backdrop {
+    background-color: #192b37;
+}
+
+.lg-backdrop.in {
+    opacity: .9;
+}
+
+.lg-sub-html {
+    background-color: #192b37;
+}
 
 /* typography styles *************************/
 
